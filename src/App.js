@@ -6,14 +6,16 @@ import {
 
 const App = () => (
   <Router>
-    <Header />
-    <main className="px-3">
-      <Switch>
-        <Route path="/" exact component={() => <Home />} />
-        {/* <Route path="/login" exact component={() => <Login />} /> */}
-      </Switch>
-    </main>
-    <Footer />
+    <div className="content-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <Header />
+      <main role="main" className="inner content">
+        <Switch>
+          <Route path="/" exact component={() => <Landing />} />
+          {/* <Route path="/login" exact component={() => <Login />} /> */}
+        </Switch>
+      </main>
+      <Footer />
+    </div>
   </Router>
 );
 
