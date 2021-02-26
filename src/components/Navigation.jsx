@@ -1,17 +1,18 @@
 import React from 'react';
-import { Link, withRouter } from 'react-router-dom';
+import Nav from 'react-bootstrap/Nav';
+import { withRouter, NavLink } from 'react-router-dom';
 
 const Navigation = () => (
   <div>
     <h3 className="masthead-brand">GHTech Web Application</h3>
-    <nav className="nav nav-masthead justify-content-center">
-      <Link className="nav-link active" aria-current="page" to="/">
-        Home
-      </Link>
-      <Link className="nav-link" to="/login">
-        Log In
-      </Link>
-    </nav>
+    <Nav className="nav-masthead justify-content-center" activeKey="/">
+      <Nav.Item>
+        <NavLink exact to="/" className="nav-link" activeClassName="active">Home</NavLink>
+      </Nav.Item>
+      <Nav.Item>
+        <NavLink exact to="/login" className="nav-link" activeClassName="active">Log In</NavLink>
+      </Nav.Item>
+    </Nav>
   </div>
 );
 
