@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import {
   Header, Footer, Landing,
 } from './components';
+import './firebase';
 
 const App = () => (
   <Router>
