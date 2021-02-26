@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import {
-  Header, Footer, Landing,
+  Header, Footer, Landing, Login,
 } from './components';
 
 const App = () => (
@@ -11,7 +11,7 @@ const App = () => (
       <main role="main" className="inner content">
         <Switch>
           <Route path="/" exact component={() => <Landing />} />
-          {/* <Route path="/login" exact component={() => <Login />} /> */}
+          <Route path="/login" exact component={() => <Login />} />
         </Switch>
       </main>
       <Footer />
