@@ -11,8 +11,9 @@ const App = () => (
       <Header />
       <main role="main" className="inner content">
         <Switch>
-          <Route path="/" exact component={() => <Landing />} />
-          <Route path="/login" exact component={() => <Login />} />
+          <Route path="/" exact component={Landing} />
+          <Route path="/login" exact component={Login} />
+          {/* <Route path="/contacts" exact component={Contacts} /> */}
         </Switch>
       </main>
       <Footer />
